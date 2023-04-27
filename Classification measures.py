@@ -9,6 +9,7 @@ iris=datasets.load_iris()
 
 x_train,x_test,y_train,y_test= train_test_split(iris.data,iris.target, random_state=1)
 
+
 clf=LogisticRegression()
 clf.fit(x_train,y_train)
 
