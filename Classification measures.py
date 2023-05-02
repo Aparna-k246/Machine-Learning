@@ -14,7 +14,7 @@ clf=LogisticRegression()
 clf.fit(x_train,y_train)
 
 y_train_pred=clf.predict(x_train)
-
+l
 y_test_pred=clf.predict(x_test)
 
 from sklearn.metrics import confusion_matrix
@@ -24,4 +24,5 @@ confusion_matrix(y_train,y_train_pred)
 confusion_matrix(y_test,y_test_pred)
 
 from sklearn.metrics import classification_report
+
 print(classification_report(y_test,y_test_pred))
